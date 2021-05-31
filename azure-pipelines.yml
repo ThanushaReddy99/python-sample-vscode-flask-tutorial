@@ -34,3 +34,8 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+  
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: pytest pytest-azurepipelines
+    artifactName: WebApp
