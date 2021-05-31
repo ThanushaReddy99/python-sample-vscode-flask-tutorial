@@ -37,5 +37,5 @@ steps:
   
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: pytest pytest-azurepipelines
+    targetPath: requirements.txt
     artifactName: WebApp
